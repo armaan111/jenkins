@@ -1,11 +1,21 @@
 pipeline {
-   agent any // to Deploy on Node 
+    agent any
 
-   stages {
-      stage('BUILD STAGE ') {
-         steps {
-            echo 'Hello we are testing the Jenkins CI Pipeline changes 1'
-         }
-      }
-   }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
