@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('BUILD STAGE ') {
          steps {
-            echo 'Hello we are testing the Jenkins CI Pipeline'
+            echo 'Hello we are testing the Jenkins CI Pipeline changes'
          }
       }
    }
